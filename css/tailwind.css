@@ -1,0 +1,9 @@
+/* ./css/tailwind.css */
+@tailwind base;
+@tailwind components;
+
+.green-btn-rounded {
+  @apply bg-green-500 p-2 rounded-lg text-white text-sm;
+}
+
+@tailwind utilities;
