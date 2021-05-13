@@ -79,19 +79,51 @@
         </div>
         <!-- end banner -->
         <!-- explore our category -->
-        <div class="flex flex-col items-center space-y-12">
-            <h1 class="text-3xl font-light	">Explore our categories</h1>
+        <div class="flex flex-col px-20 px-6 space-y-12">
+            <div class="flex justify-center">
+                <h1 class="text-3xl font-light 	">Explore our categories</h1>
+            </div>
             <!-- tab view -->
-            <div>
+            <div class="py-8">
                 <!-- tabs -->
-                <div class="">
-                    <a href="">Mechanic</a>
-                    <a href="">Links</a>
-                    <a href="">Links</a>
-                    <a href="">Links</a>
-                    <a href="">Links</a>
-                    <a href="">Links</a>
+                <div class="text-md font-semibold text-gray-500 flex justify-between border-b items-center p-2 ">
+                    <div class="flex-auto flex justify-between ">
+                        <div class="relative flex justify-center text-green-500"><a href="">Mechanical Parts</a>
+                            <div class="absolute w-20 h-1 -bottom-3	 bg-green-500"></div>
+                        </div>
+                        <div class="relative flex justify-center">
+                            <a href="">Electrical Parts</a>
+                            <div class="absolute w-20 h-1 -bottom-3	 bg-green-500 hidden"></div>
+
+                        </div>
+                        <div class="relative flex justify-center">
+                            <a href="">Electronics</a>
+                            <div class="absolute w-20 h-1 -bottom-3	 bg-green-500 hidden"></div>
+                        </div>
+                        <div class="relative flex justify-center">
+                            <a href="">Power Supplies</a>
+                            <div class="absolute w-20 h-1 -bottom-3	 bg-green-500 hidden"></div>
+                        </div>
+                        <div class="relative flex justify-center">
+                            <a href="">Systems & Solutions</a>
+                            <div class="absolute w-20 h-1 -bottom-3	 bg-green-500 hidden"></div>
+                        </div>
+                    </div>
+                    <!-- search cat -->
+                    <div class="flex flex-none">
+                        <input type="text" name="search_categories" id="" class="w-56">
+                        <span class="bg-green-500 text-white p-1 rounded shadow-sm	">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </div>
+                    <!-- end search cat -->
                 </div>
+                <div class=""></div>
                 <!-- end tabs -->
                 <div></div>
             </div>
