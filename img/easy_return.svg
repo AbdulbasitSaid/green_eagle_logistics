@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="271" height="271" viewBox="0 0 271 271">
+  <defs>
+    <filter id="base" x="0" y="0" width="271" height="271" filterUnits="userSpaceOnUse">
+      <feOffset dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#11293b" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.155" y1="0.845" x2="0.845" y2="0.155" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_25" data-name="Group 25" transform="translate(-143.595 30)">
+    <g id="base-2" data-name="base" transform="translate(188.595)">
+      <g transform="matrix(1, 0, 0, 1, -45, -30)" filter="url(#base)">
+        <circle id="base-3" data-name="base" cx="90.5" cy="90.5" r="90.5" transform="translate(45 30)" fill="#11293b"/>
+      </g>
+      <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M90.5,0A90.5,90.5,0,1,1,0,90.5,90.5,90.5,0,0,1,90.5,0Z" opacity="0.5" fill="url(#linear-gradient)" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <path id="ic_reply_24px" d="M28.282,16.186V5L3,24.576,28.282,44.151V32.686c18.058,0,30.7,4.474,39.729,14.262C64.4,32.965,53.564,18.983,28.282,16.186Z" transform="translate(248.042 59)" fill="#2aa47f"/>
+  </g>
+</svg>
