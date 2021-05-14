@@ -12,16 +12,74 @@
     <header>
         <div class="pt-8">
             <!-- top header -->
+
             <div class=" h-24 flex justify-around items-center px-4">
-                <div class="bg-gray-300 w-11 h-6 rounded"></div>
-                <div class="flex items-center bg-green-100 h-12 w-20">
-                    <img src="/img/logo.png" alt="" class="h-full w-full">
+                <!-- select -->
+                <div class="bg-gray-200  rounded items-center text-sm p-1  ">
+                    <select name="language" id="" class="bg-gray-200 w-full font-light text-gray-500  ">
+                        <option value="en">ENG</option>
+                        <option value="fr">FRN</option>
+                        <option value="es">ESP</option>
+                        <option value="ch">CHI</option>
+                    </select>
                 </div>
-                <div class="border-2 border-green-500 w-1/2 h-12 rounded-lg"></div>
-                <button class="text-white green-btn-rounded">Become a partner</button>
-                <div class="bg-green-500 w-10 h-10"></div>
-                <div class="bg-green-500 w-10 h-10 rounded-full"></div>
-                <div class="bg-gray-300 w-11 h-6 rounded"></div>
+                <!-- end select  -->
+                <div class="flex items-center w-28 ">
+                    <img src="/img/logo.png" alt="" class="contain ">
+                </div>
+                <div class="border border-green-500 w-1/2 h-12 rounded-lg flex">
+                    <div class="flex-1 border-r border-green-500 p-2 flex justify-end text-gray-500">
+                        <select name="" id="" class="">
+                            <option value="">Products</option>
+                            <option value="">Services</option>
+                        </select>
+                    </div>
+                    <div class="w-4/5 p-2 w-full flex items-center">
+                        <input type="text" name="" id="" class="w-full"
+                            placeholder="Search for industrial products or search by part number">
+                        <span class="flex-1 text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <button class="text-white green-btn-rounded text-sm shadow-lg">Become a partner</button>
+                <!-- cart icon -->
+                <div class=" w-14 h-14 flex items-center justify-center relative">
+                    <div
+                        class="absolute top-0 right-0 h-6 w-6 text-xs rounded-full bg-red-500 text-white p-2 flex items-center justify-center">
+                        1
+                    </div>
+                    <span class="text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        </svg>
+                    </span>
+                </div>
+                <!-- end  -->
+                <div class="bg-green-500 w-10 h-10 rounded-full flex justify-center items-center ">
+                    <span class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white " viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </div>
+                <!-- select -->
+                <div class="bg-gray-200  rounded items-center text-sm p-1  ">
+                    <select name="currency" id="" class="bg-gray-200 w-full font-light text-gray-500  ">
+                        <option value="en">USD$</option>
+                        <option value="fr">EUR</option>
+                        <option value="es">GBP</option>
+                    </select>
+                </div>
+                <!-- end select -->
             </div>
             <!-- end top header -->
             <!-- bottom header -->
@@ -35,14 +93,20 @@
                                     d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </span>
-                        <div class="text-sm text-white"><a href="">Link</a></div>
+                        <div class="text-sm text-white"><a href="">Categories</a></div>
                     </div>
-                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Link</a></div>
-                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Link</a></div>
-                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Link</a></div>
-                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Link</a></div>
-                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Link</a></div>
-                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Link</a></div>
+                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Mechanical</a>
+                    </div>
+                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">System &
+                            Solutions</a></div>
+                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Electrical</a>
+                    </div>
+                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a
+                            href="">Electronics</a></div>
+                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Power
+                            Supply</a></div>
+                    <div class="text-sm text-white flex-auto items-center justify-center flex"><a href="">Shop by
+                            brands</a></div>
                 </div>
                 <div class="flex-auto flex items-center justify-center h-full">
                     <button class="border-2 py-1 px-8 rounded text-white text-sm">Whitelist</button>
