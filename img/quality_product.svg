@@ -1,3 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="56" height="83" viewBox="0 0 56 83">
-  <path id="icon" d="M10.605,82.663a3.69,3.69,0,0,1-2.159-3.357c0-.037,0-.078,0-.115L9.747,48.7A27.534,27.534,0,0,1,0,27.708a28,28,0,0,1,56,0,27.535,27.535,0,0,1-9.749,21l1.3,30.488c0,.037,0,.078,0,.115A3.7,3.7,0,0,1,43.859,83a3.737,3.737,0,0,1-2.414-.9L28,70.636,14.559,82.1a3.68,3.68,0,0,1-3.954.567Zm19.89-17.1,11.377,9.7L40.893,52.3a28.23,28.23,0,0,1-25.786,0l-.979,22.969,11.376-9.7a3.652,3.652,0,0,1,4.991,0ZM5.51,27.708a22.492,22.492,0,0,0,44.982,0,22.492,22.492,0,0,0-44.982,0ZM24.318,37.883a2.769,2.769,0,0,1-1.949-.812l-7.527-7.54a2.7,2.7,0,0,1,.024-3.853,2.773,2.773,0,0,1,3.894.024l5.581,5.589L36.335,19.423a2.773,2.773,0,0,1,3.9,0,2.7,2.7,0,0,1,0,3.853L26.276,37.084a2.77,2.77,0,0,1-1.948.8Z" fill="#2aa47f"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="271" height="271" viewBox="0 0 271 271">
+  <defs>
+    <filter id="base" x="0" y="0" width="271" height="271" filterUnits="userSpaceOnUse">
+      <feOffset dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#11293b" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.155" y1="0.845" x2="0.845" y2="0.155" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="icon" transform="translate(45 30)">
+    <g id="base-2" data-name="base" transform="translate(0)">
+      <g transform="matrix(1, 0, 0, 1, -45, -30)" filter="url(#base)">
+        <circle id="base-3" data-name="base" cx="90.5" cy="90.5" r="90.5" transform="translate(45 30)" fill="#11293b"/>
+      </g>
+      <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M90.5,0A90.5,90.5,0,1,1,0,90.5,90.5,90.5,0,0,1,90.5,0Z" opacity="0.5" fill="url(#linear-gradient)" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+    <path id="icon-2" data-name="icon" d="M10.605,82.663a3.69,3.69,0,0,1-2.159-3.357c0-.037,0-.078,0-.115L9.747,48.7A27.534,27.534,0,0,1,0,27.708a28,28,0,0,1,56,0,27.535,27.535,0,0,1-9.749,21l1.3,30.488c0,.037,0,.078,0,.115A3.7,3.7,0,0,1,43.859,83a3.737,3.737,0,0,1-2.414-.9L28,70.636,14.559,82.1a3.68,3.68,0,0,1-3.954.567Zm19.89-17.1,11.377,9.7L40.893,52.3a28.23,28.23,0,0,1-25.786,0l-.979,22.969,11.376-9.7a3.652,3.652,0,0,1,4.991,0ZM5.51,27.708a22.492,22.492,0,0,0,44.982,0,22.492,22.492,0,0,0-44.982,0ZM24.318,37.883a2.769,2.769,0,0,1-1.949-.812l-7.527-7.54a2.7,2.7,0,0,1,.024-3.853,2.773,2.773,0,0,1,3.894.024l5.581,5.589L36.335,19.423a2.773,2.773,0,0,1,3.9,0,2.7,2.7,0,0,1,0,3.853L26.276,37.084a2.77,2.77,0,0,1-1.948.8Z" transform="translate(63 49)" fill="#2aa47f"/>
+  </g>
 </svg>
