@@ -278,25 +278,28 @@
               p-2
             ">
                     <div class="flex-auto flex justify-between">
-                        <div class="relative flex justify-center text-green-500">
-                            <a href="">Mechanical Parts</a>
-                            <div class="absolute w-20 h-1 -bottom-3 bg-green-500"></div>
+                        <div class="relative flex justify-center ">
+                            <a href="#mechanical_parts" data-tab="mechanical_parts" class="active-tab">Mechanical
+                                Parts</a>
+                            <div class="active-indicator" indicator="mechanical_parts" id="mechanical_parts_indicator">
+                            </div>
                         </div>
                         <div class="relative flex justify-center">
-                            <a href="">Electrical Parts</a>
-                            <div class="absolute w-20 h-1 -bottom-3 bg-green-500 hidden"></div>
+                            <a href="#electrical_parts" data-tab="electrical_parts">Electrical Parts</a>
+                            <div class="" indicator="electrical_parts" id="electrical_parts_indicator"></div>
                         </div>
                         <div class="relative flex justify-center">
-                            <a href="">Electronics</a>
-                            <div class="absolute w-20 h-1 -bottom-3 bg-green-500 hidden"></div>
+                            <a href="#electronics" data-tab="electronics">Electronics</a>
+                            <div class=" " indicator="electronics" id="electronics_indicator"></div>
                         </div>
                         <div class="relative flex justify-center">
-                            <a href="">Power Supplies</a>
-                            <div class="absolute w-20 h-1 -bottom-3 bg-green-500 hidden"></div>
+                            <a href="#power_supplies" data-tab="power_supplies">Power Supplies</a>
+                            <div class="" indicator="power_suppliess" id="power_supplies_indicator"></div>
                         </div>
                         <div class="relative flex justify-center">
-                            <a href="">Systems & Solutions</a>
-                            <div class="absolute w-20 h-1 -bottom-3 bg-green-500 hidden"></div>
+                            <a href="#systems_and_solutions" data-tab="systems_and_solutions">Systems & Solutions</a>
+                            <div class=" " indicator="systems_and_solutions" id="systems_and_solutions_indicator">
+                            </div>
                         </div>
                     </div>
                     <!-- search cat -->
@@ -317,7 +320,21 @@
                 <!-- end tabs -->
                 <!-- tab Items -->
                 <section>
-                    <div></div>
+                    <div id="mechanical_parts">
+                        Mechanical Parts
+                    </div>
+                    <div id="electrical_parts" class="hidden">
+                        Electrical Parts
+                    </div>
+                    <div id="electronics" class="hidden">
+                        Electronics
+                    </div>
+                    <div id="power_supplies" class="hidden">
+                        Power Supplies
+                    </div>
+                    <div id="systems_and_solutions" class="hidden">
+                        Systems & Solutions
+                    </div>
                 </section>
                 <!-- end tab Items -->
             </div>
@@ -326,5 +343,6 @@
         <!-- end explore our category -->
     </main>
 </body>
+<script src="js/tabs.js"></script>
 
 </html>

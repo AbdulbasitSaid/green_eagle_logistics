@@ -5,5 +5,11 @@
 .green-btn-rounded {
   @apply bg-green-500 p-2 rounded-lg text-white text-sm;
 }
+.active-tab {
+  @apply text-green-500;
+}
+.active-indicator {
+  @apply absolute w-20 h-1 -bottom-3 bg-green-500 text-green-500;
+}
 
 @tailwind utilities;
