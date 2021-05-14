@@ -453,10 +453,64 @@
           <!-- tab Items -->
           <section>
             <div id="mechanical_parts">
+              <!-- product -->
               <div class="flex flex-col font-thin">
-                <div class="w-72 h-auto text-sm space-y-3">
-                  <img src="img/allen_product.png" alt="" class="contain" />
-                  <p class="text-gray-300">176-1A45</p>
+                <div class="w-72 h-auto text-sm space-y-3 group flex flex-col">
+                  <div class="relative group">
+                    <img src="img/allen_product.png" alt="" class="contain" />
+                    <div
+                      class="
+                        w-72
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "
+                    ></div>
+                    <div
+                      class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      "
+                    >
+                      <div
+                        class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        "
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                          />
+                        </svg>
+                      </div>
+
+                      <p class="text-center flex-1">+ Add to wishlist</p>
+                    </div>
+                  </div>
+
+                  <p class="text-gray-500">176-1A45</p>
                   <p>
                     Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
                     4 I/O…
@@ -466,12 +520,21 @@
                     <span class="line-through text-gray-700">$330.00</span>
                   </p>
                   <button
-                    class="bg-gray-900 px-4 py-2 text-white rounded uppercase"
+                    class="
+                      bg-gray-900
+                      px-4
+                      py-2
+                      text-white
+                      rounded
+                      uppercase
+                      hover:bg-green-500
+                    "
                   >
                     Add to Cart
                   </button>
                 </div>
               </div>
+              <!-- end product  -->
             </div>
             <div id="electrical_parts" class="hidden">Electrical Parts</div>
             <div id="electronics" class="hidden">Electronics</div>
