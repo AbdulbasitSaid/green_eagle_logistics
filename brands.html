@@ -1,83 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- ... -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header>
-      <div class="pt-8">
-        <!-- top header -->
 
-        <div class="h-24 flex justify-around items-center px-4">
-          <!-- select -->
-          <div class="bg-gray-200 rounded items-center text-sm p-1">
-            <select
-              name="language"
-              id=""
-              class="bg-gray-200 w-full font-light text-gray-500"
-            >
-              <option value="en">ENG</option>
-              <option value="fr">FRN</option>
-              <option value="es">ESP</option>
-              <option value="ch">CHI</option>
-            </select>
-          </div>
-          <!-- end select  -->
-          <div class="flex items-center w-28">
-            <img src="/img/logo.png" alt="" class="contain" />
-          </div>
-          <div class="border border-green-500 w-1/2 h-12 rounded-lg flex">
-            <div
-              class="
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="pt-8">
+      <!-- top header -->
+
+      <div class="h-24 flex justify-around items-center px-4">
+        <!-- select -->
+        <div class="bg-gray-200 rounded items-center text-sm p-1">
+          <select name="language" id="" class="bg-gray-200 w-full font-light text-gray-500">
+            <option value="en">ENG</option>
+            <option value="fr">FRN</option>
+            <option value="es">ESP</option>
+            <option value="ch">CHI</option>
+          </select>
+        </div>
+        <!-- end select  -->
+        <div class="flex items-center w-28">
+          <img src="/img/logo.png" alt="" class="contain" />
+        </div>
+        <div class="border border-green-600 w-1/2 h-12 rounded-lg flex">
+          <div class="
                 flex-1
-                border-r border-green-500
+                border-r border-green-600
                 p-2
                 flex
                 justify-end
                 text-gray-500
-              "
-            >
-              <select name="" id="" class="">
-                <option value="">Products</option>
-                <option value="">Services</option>
-              </select>
-            </div>
-            <div class="w-4/5 p-2 w-full flex items-center">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="w-full"
-                placeholder="Search for industrial products or search by part number"
-              />
-              <span class="flex-1 text-green-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </span>
-            </div>
+              ">
+            <select name="" id="" class="">
+              <option value="">Products</option>
+              <option value="">Services</option>
+            </select>
           </div>
-          <button class="text-white green-btn-rounded p-2 text-sm shadow-lg">
-            Become a partner
-          </button>
-          <!-- cart icon -->
-          <div class="w-8 h-8 flex items-center justify-center relative">
-            <div
-              class="
+          <div class="w-4/5 p-2 w-full flex items-center">
+            <input type="text" name="" id="" class="w-full"
+              placeholder="Search for industrial products or search by part number" />
+            <span class="flex-1 text-green-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <button class="
+              text-white
+              green-btn-rounded
+              p-2
+              text-sm
+              shadow-lg
+              bg-green-600
+            ">
+          Become a partner
+        </button>
+        <!-- cart icon -->
+        <div class="w-8 h-8 flex items-center justify-center relative">
+          <div class="
                 absolute
                 -top-2
                 -right-2
@@ -90,67 +78,47 @@
                 flex
                 items-center
                 justify-center
-              "
-            >
-              1
-            </div>
-            <span class="text-green-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
-                />
-              </svg>
-            </span>
+              ">
+            1
           </div>
-          <!-- end  -->
-          <span class="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-green-500 bg-white"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
+          <span class="text-green-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
               <path
-                fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-                clip-rule="evenodd"
-              />
+                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
             </svg>
           </span>
-          <!-- select -->
-          <div class="bg-gray-200 rounded items-center text-sm p-1">
-            <select
-              name="currency"
-              id=""
-              class="bg-gray-200 w-full font-light text-gray-500"
-            >
-              <option value="en">USD$</option>
-              <option value="fr">EUR</option>
-              <option value="es">GBP</option>
-            </select>
-          </div>
-          <!-- end select -->
         </div>
-        <!-- end top header -->
-        <!-- bottom header -->
-        <div
-          class="
-            bg-green-500
+        <!-- end  -->
+        <span class="">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600 bg-white" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+        <!-- select -->
+        <div class="bg-gray-200 rounded items-center text-sm p-1">
+          <select name="currency" id="" class="bg-gray-200 w-full font-light text-gray-500">
+            <option value="en">USD$</option>
+            <option value="fr">EUR</option>
+            <option value="es">GBP</option>
+          </select>
+        </div>
+        <!-- end select -->
+      </div>
+      <!-- end top header -->
+      <!-- bottom header -->
+      <div class="
+            bg-green-600
             h-16
             flex
             justify-around
             items-center
             border border-gray-500
-          "
-        >
-          <div class="w-4/5 h-full flex justify-around items-center">
-            <div
-              class="
+          ">
+        <div class="w-4/5 h-full flex justify-around items-center">
+          <div class="
                 flex
                 justify-center
                 flex-auto
@@ -159,232 +127,187 @@
                 border-r
                 h-full
                 border-gray-500
-              "
-            >
-              <span class="mr-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </span>
-              <div class="text-sm text-white"><a href="">Categories</a></div>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">Mechanical</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">System & Solutions</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">Electrical</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">Electronics</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">Power Supply</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">Shop by brands</a>
-            </div>
+              ">
+            <span class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </span>
+            <div class="text-sm text-white"><a href="">Categories</a></div>
           </div>
-          <div class="flex-auto flex items-center justify-center h-full">
-            <button class="border-2 py-1 px-8 rounded text-white text-sm">
-              Whitelist
-            </button>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">Mechanical</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">System & Solutions</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">Electrical</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">Electronics</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">Power Supply</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">Shop by brands</a>
           </div>
         </div>
-        <!-- end bottom header -->
+        <div class="flex-auto flex items-center justify-center h-full">
+          <button class="border-2 py-1 px-8 rounded text-white text-sm">
+            Whitelist
+          </button>
+        </div>
       </div>
-    </header>
+      <!-- end bottom header -->
+    </div>
+  </header>
 
-    <main class="pt-12 px-6 space-y-10">
-      <!-- top search -->
-      <div class="flex justify-center space-x-4 p-2">
-        <div
-          class="rounded-lg w-1/3 border-2 border-green-500 p-2 flex space-x-2"
-        >
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-green-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </div>
-          <input
-            type="text"
-            placeholder="Search by their brand names"
-            class="flex-auto focus:outline-none"
-          />
+  <main class="pt-12 px-6 space-y-10">
+    <!-- top search -->
+    <div class="flex justify-center space-x-4 p-2">
+      <div class="rounded-lg w-1/3 border-2 border-green-600 p-2 flex space-x-2">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
         </div>
-        <input
-          type="button"
-          value="Search by brand"
-          class="text-sm rounded px-6 bg-green-500 text-white"
-        />
+        <input type="text" placeholder="Search by their brand names" class="flex-auto focus:outline-none" />
       </div>
-      <!-- end top search  -->
+      <input type="button" value="Search by brand" class="text-sm rounded px-6 bg-green-600 text-white" />
+    </div>
+    <!-- end top search  -->
 
-      <!-- brans view -->
-      <div class="w-full h-screen bg-pink-100 flex justify-between">
-        <div class="grid grid-cols-2 flex-auto bg-yellow-200 h-screen"></div>
-        <div class="h-screen w-12 bg-green-200"></div>
+    <!-- brans view -->
+    <div class="w-full flex justify-between">
+      <div class="  grid grid-flow-col grid-cols-2 grid-flow-row-dense gap-12 w-screen py-10 px-20 ">
+        <div class="bg-pink-200 col-span-1 h-48">1</div>
+        <div class="bg-pink-200 col-span-1 h-48">2</div>
+        <div class="bg-pink-200 w-96 h-48">3</div>
+        <div class="bg-pink-200 w-96 h-48">4</div>
+        <div class="bg-pink-200 w-96 h-48">5</div>
+        <div class="bg-pink-200 w-96 h-48">6</div>
+        <div class="bg-pink-200 w-96 h-48">7</div>
+        <div class="bg-pink-200 w-96 h-48">8</div>
+
       </div>
-      <!-- end brans view -->
-    </main>
-    <footer>
-      <div
-        class="bg-gradient-to-r from-white to-green-200 p-12 grid grid-cols-4"
-      >
-        <div
-          class="col-span-4 flex justify-between border-b border-gray-400 mb-20"
-        >
-          <div class="">
-            <img src="/img/logo.png" alt="" />
-          </div>
-          <div class="py-16 text-sm">
-            <div class="text-right space-y-3">
-              <p>Do you have questions or concerns about our services</p>
-              <p>Send us a mail on support@stockcheck.com</p>
-              <p>+1 972-234-4343</p>
-            </div>
+      <!-- side -->
+      <div class="w-12 bg-green-200"></div>
+      <!-- end side  -->
+    </div>
+    <!-- end brans view -->
+  </main>
+  <footer>
+    <div class="bg-gradient-to-r from-white to-green-200 p-12 grid grid-cols-4">
+      <div class="col-span-4 flex justify-between border-b border-gray-400 mb-20">
+        <div class="">
+          <img src="/img/logo.png" alt="" />
+        </div>
+        <div class="py-16 text-sm">
+          <div class="text-right space-y-3">
+            <p>Do you have questions or concerns about our services</p>
+            <p>Send us a mail on support@stockcheck.com</p>
+            <p>+1 972-234-4343</p>
           </div>
         </div>
-        <!-- about -->
-        <div class="text-sm">
-          <h3 class="text-lg font-normal mb-4">About Us</h3>
-          <div class="space-y-2">
-            <p>Green Eagle Logistics</p>
-            <p>Customer Service</p>
-            <p>Feedback</p>
-            <div class="flex space-x-4">
-              <span>
-                <object
-                  data="img/instagram.svg"
-                  type=""
-                  class="w-6 h-6"
-                ></object>
-              </span>
-              <span>
-                <object data="img/twitter.svg" type="" class="w-6 h-6"></object>
-              </span>
-            </div>
-          </div>
-        </div>
-        <!-- end about  -->
-        <!-- Our policies -->
-        <div class="text-sm">
-          <h3 class="text-lg font-normal mb-4">Our Policies</h3>
-          <div class="space-y-2">
-            <p>Privacy policy</p>
-            <p>Terms And conditions</p>
-            <p>Refund and Returns</p>
-          </div>
-        </div>
-        <!-- end our policies -->
-        <!-- Our services  -->
-        <div class="text-sm">
-          <h3 class="text-lg font-normal mb-4">Our Services</h3>
-          <div class="space-y-2">
-            <p>Top Deals</p>
-            <p>Top Brands</p>
-            <p>Best Sellers</p>
-          </div>
-        </div>
-        <!-- end our services -->
-        <!-- payment -->
-        <div class="text-sm">
-          <h3 class="text-lg font-normal mb-4">Payment</h3>
-          <div class="space-y-2">
-            <p>We accept</p>
-            <div class="grid grid-cols-5 gap-1">
-              <object data="img/paypal@2x.png" type="" class="w-14"></object>
-              <object data="img/visa-2@2x.png" type="" class="w-14"></object>
-              <object data="img/amazon@2x.png" type="" class="w-14"></object>
-              <object
-                data="img/american-express@2x.png"
-                type=""
-                class="w-14"
-              ></object>
-              <object data="img/ebay@2x.png" type="" class="w-14"></object>
-              <object data="img/cirrus@2x.png" type="" class="w-14"></object>
-              <object
-                data="img/mastercard@2x.png"
-                type=""
-                class="w-14"
-              ></object>
-            </div>
-          </div>
-        </div>
-        <!-- end payment  -->
       </div>
-    </footer>
-  </body>
+      <!-- about -->
+      <div class="text-sm">
+        <h3 class="text-lg font-normal mb-4">About Us</h3>
+        <div class="space-y-2">
+          <p>Green Eagle Logistics</p>
+          <p>Customer Service</p>
+          <p>Feedback</p>
+          <div class="flex space-x-4">
+            <span>
+              <object data="img/instagram.svg" type="" class="w-6 h-6"></object>
+            </span>
+            <span>
+              <object data="img/twitter.svg" type="" class="w-6 h-6"></object>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end about  -->
+      <!-- Our policies -->
+      <div class="text-sm">
+        <h3 class="text-lg font-normal mb-4">Our Policies</h3>
+        <div class="space-y-2">
+          <p>Privacy policy</p>
+          <p>Terms And conditions</p>
+          <p>Refund and Returns</p>
+        </div>
+      </div>
+      <!-- end our policies -->
+      <!-- Our services  -->
+      <div class="text-sm">
+        <h3 class="text-lg font-normal mb-4">Our Services</h3>
+        <div class="space-y-2">
+          <p>Top Deals</p>
+          <p>Top Brands</p>
+          <p>Best Sellers</p>
+        </div>
+      </div>
+      <!-- end our services -->
+      <!-- payment -->
+      <div class="text-sm">
+        <h3 class="text-lg font-normal mb-4">Payment</h3>
+        <div class="space-y-2">
+          <p>We accept</p>
+          <div class="grid grid-cols-5 gap-1">
+            <object data="img/paypal@2x.png" type="" class="w-14"></object>
+            <object data="img/visa-2@2x.png" type="" class="w-14"></object>
+            <object data="img/amazon@2x.png" type="" class="w-14"></object>
+            <object data="img/american-express@2x.png" type="" class="w-14"></object>
+            <object data="img/ebay@2x.png" type="" class="w-14"></object>
+            <object data="img/cirrus@2x.png" type="" class="w-14"></object>
+            <object data="img/mastercard@2x.png" type="" class="w-14"></object>
+          </div>
+        </div>
+      </div>
+      <!-- end payment  -->
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -3,7 +3,7 @@
 @tailwind components;
 
 .green-btn-rounded {
-  @apply bg-green-500 p-2 rounded-lg text-white text-sm;
+  @apply bg-green-600 p-2 rounded-lg text-white text-sm;
 }
 
 .active-tab {
@@ -11,7 +11,7 @@
 }
 
 .active-indicator {
-  @apply absolute w-20 h-1 -bottom-3 bg-green-500 text-green-500;
+  @apply absolute w-20 h-1 -bottom-3 bg-green-600 text-green-500;
 }
 
 @tailwind utilities;
