@@ -11,6 +11,50 @@
 <body>
   <header>
     <div class="pt-8">
+      <!-- side menu -->
+      <div class="absolute  h-3/4 w-1/2 z-10 top-28 left-0 border pl-4 pb-4	" id="side-menu">
+        <!-- opaced bg -->
+        <div class="bg-white h-full w-full absolute top-0 left-0 opacity-70"></div>
+        <!-- end opaced bg  -->
+        <div class="flex h-full justify-between">
+          <div class="w-1/2 rounded-lg shadow-lg h-full bg-white z-30 py-6	">
+            <div class="flex px-6 py-1 text-sm text-gray-300 gap-4 items-center" id="close-menu">
+              <div class="w-6 h-1 bg-gray-300 rounded"></div>
+              <p>Categories</p>
+            </div>
+            <div class=" text-gray-400 text-sm gap-3 flex flex-col">
+              <a class="px-6 ">Mechanical</a>
+              <a class="px-6 ">Systems and solutions</a>
+              <a class="px-6 ">Electrical</a>
+              <a class="px-6 ">Electronics</a>
+              <button class=" px-6 py-2 dropdown-btn focus:outline-none text-left flex justify-between ">Services
+                <i><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg></i>
+              </button>
+              <div class="flex flex-col gap-3" id="toggle-links">
+                <a class="px-12  ">Repaire services</a>
+                <a class="px-12  ">Warehousing services</a>
+
+              </div>
+              <a class="px-6 ">Power Supply</a>
+              <a class="px-6 ">Shop and brands</a>
+            </div>
+          </div>
+          <div class="z-30 py-12 px-8 h-full text-sm">
+            <div class="flex flex-col h-96">
+              <div class="h-72 w-72"><img src="img/services_people.png" alt="" class="h-full w-full"></div>
+              <p class="text-green-600 text-base font-bold">Repaire Services</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit aliquam consequatur veritatis dolorum
+                temporibus ab, natus officia quibusdam, nihil error iure velit et facere. Repellendus architecto neque
+                nam sequi consectetur!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end side menu -->
       <!-- top header -->
 
       <div class="h-24 flex justify-around items-center px-4">
@@ -110,25 +154,25 @@
       <!-- end top header -->
       <!-- bottom header -->
       <div class="
-            bg-green-600
-            h-16
-            flex
-            justify-around
-            items-center
-            border border-gray-500
-          ">
+              bg-green-600
+              h-16
+              flex
+              justify-around
+              items-center
+              border border-gray-500
+            ">
         <div class="w-4/5 h-full flex justify-around items-center">
           <div class="
-                flex
-                justify-center
-                flex-auto
-                text-white
-                items-center
-                border-r
-                h-full
-                border-gray-500
-              ">
-            <span class="mr-3">
+                  flex
+                  justify-center
+                  flex-auto
+                  text-white
+                  items-center
+                  border-r
+                  h-full
+                  border-gray-500
+                ">
+            <span class="mr-3" id="menu-toggle">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -137,58 +181,58 @@
             <div class="text-sm text-white"><a href="">Categories</a></div>
           </div>
           <div class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              ">
+                  text-sm text-white
+                  flex-auto
+                  items-center
+                  justify-center
+                  flex
+                ">
             <a href="">Mechanical</a>
           </div>
           <div class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              ">
+                  text-sm text-white
+                  flex-auto
+                  items-center
+                  justify-center
+                  flex
+                ">
             <a href="">System & Solutions</a>
           </div>
           <div class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              ">
+                  text-sm text-white
+                  flex-auto
+                  items-center
+                  justify-center
+                  flex
+                ">
             <a href="">Electrical</a>
           </div>
           <div class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              ">
+                  text-sm text-white
+                  flex-auto
+                  items-center
+                  justify-center
+                  flex
+                ">
             <a href="">Electronics</a>
           </div>
           <div class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              ">
+                  text-sm text-white
+                  flex-auto
+                  items-center
+                  justify-center
+                  flex
+                ">
             <a href="">Power Supply</a>
           </div>
           <div class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              ">
-            <a href="">Shop by brands</a>
+                  text-sm text-white
+                  flex-auto
+                  items-center
+                  justify-center
+                  flex
+                ">
+            <a href="brands.html">Shop by brands</a>
           </div>
         </div>
         <div class="flex-auto flex items-center justify-center h-full">
@@ -1191,5 +1235,8 @@
     </div>
   </footer>
 </body>
+<script src="js/tabs.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/show_side_nav.js"></script>
 
 </html>
