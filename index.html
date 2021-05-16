@@ -394,8 +394,54 @@
   </header>
   <main>
     <!-- slider -->
-    <div class="h-96  w-full relative">
-      <img src="/img/warehouse.jpg" alt="" class="h-full w-full object-cover" />
+    <div class="h-96  w-full relative ">
+      <div id="image-slider" class="splide h-96">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide relative ">
+              <img src="img/slide2.jpg" class="w-full h-96 object-cover">
+              <div class="absolute top-28 left-20">
+                <div class="flex flex-col gap-4 items-start text-white">
+                  <h4 class="uppercase text-4xl font-bold text-white">repaire services</h4>
+                  <div class="text-white font-bold w-1/2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, tempora architecto optio laboriosam
+                    sint nulla autem! Necessitatibus animi dicta provident ducimus, quos quo est assumenda officia
+                    tenetur! Rerum, repudiandae voluptates. </div>
+                  <button class="uppercase border-2 p-2">repair now</button>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide relative ">
+              <img src="img/slide3.jpg" class="w-full h-96 object-cover">
+              <div class="absolute top-28 left-20">
+                <div class="flex flex-col gap-4 items-start text-white">
+                  <h4 class="uppercase text-4xl font-bold text-white">electronic components</h4>
+                  <div class="text-white font-bold w-1/2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, tempora architecto optio laboriosam
+                    sint nulla autem! Necessitatibus animi dicta provident ducimus, quos quo est assumenda officia
+                    tenetur! Rerum, repudiandae voluptates. </div>
+                  <button class="uppercase border-2 p-2">store now</button>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide relative ">
+              <img src="img/slide1.jpg" class="w-full h-96 object-cover">
+              <div class="absolute top-28 left-20">
+                <div class="flex flex-col gap-4 items-start text-white">
+                  <h4 class="uppercase text-4xl font-bold text-white">warehousing</h4>
+                  <div class="text-white font-bold w-1/2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, tempora architecto optio laboriosam
+                    sint nulla autem! Necessitatibus animi dicta provident ducimus, quos quo est assumenda officia
+                    tenetur! Rerum, repudiandae voluptates. </div>
+                  <button class="uppercase border-2 p-2">store now</button>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <!-- <img src="/img/warehouse.jpg" alt="" class="h-full w-full object-cover" />
       <div class="
             absolute
             top-28
@@ -431,7 +477,7 @@
             ">
           shop now
         </button>
-      </div>
+      </div> -->
     </div>
     <!-- end slider -->
     <!-- banner -->
@@ -1517,11 +1563,23 @@
     </div>
   </footer>
 </body>
+
 <script src="js/tabs.js"></script>
 <script src="js/dropdown.js"></script>
 <script src="js/show_side_nav.js"></script>
 <script src="js/show_cart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#image-slider').mount();
+  });
 
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#image-slider', {
+      'contain': true,
+      'heightRatio': 0.5,
+    }).mount();
+  });
+</script>
 
 </html>
