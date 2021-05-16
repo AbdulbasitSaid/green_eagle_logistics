@@ -1,95 +1,116 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- ... -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+<html lang="en">
 
-  <body>
-    <header>
-      <div class="pt-8">
-        <!-- top header -->
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
-        <div class="h-24 flex justify-around items-center px-4">
-          <!-- select -->
-          <div class="bg-gray-200 rounded items-center text-sm p-1">
-            <select
-              name="language"
-              id=""
-              class="bg-gray-200 w-full font-light text-gray-500"
-            >
-              <option value="en">ENG</option>
-              <option value="fr">FRN</option>
-              <option value="es">ESP</option>
-              <option value="ch">CHI</option>
-            </select>
+<body>
+  <header>
+    <div class="pt-8  ">
+      <!-- side menu -->
+      <div class="absolute  h-3/4 w-1/2 z-10 top-28 left-0 border pl-4 pb-4	" id="side-menu">
+        <!-- opaced bg -->
+        <div class="bg-white h-full w-full absolute top-0 left-0 opacity-70"></div>
+        <!-- end opaced bg  -->
+        <div class="flex h-full justify-between">
+          <div class="w-1/2 rounded-lg shadow-lg h-full bg-white z-30 py-6	">
+            <div class="flex px-6 py-1 text-sm text-gray-300 gap-4 items-center" id="close-menu">
+              <div class="w-6 h-1 bg-gray-300 rounded"></div>
+              <p>Categories</p>
+            </div>
+            <div class=" text-gray-400 text-sm gap-3 flex flex-col">
+              <a class="px-6 ">Mechanical</a>
+              <a class="px-6 ">Systems and solutions</a>
+              <a class="px-6 ">Electrical</a>
+              <a class="px-6 ">Electronics</a>
+              <button class=" px-6 py-2 dropdown-btn focus:outline-none text-left flex justify-between ">Services
+                <i><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg></i>
+              </button>
+              <div class="flex flex-col gap-3" id="toggle-links">
+                <a class="px-12  ">Repaire services</a>
+                <a class="px-12  ">Warehousing services</a>
+
+              </div>
+              <a class="px-6 ">Power Supply</a>
+              <a class="px-6 ">Shop and brands</a>
+            </div>
           </div>
-          <!-- end select  -->
-          <div class="flex items-center w-28">
-            <a href="index.html"
-              ><img src="/img/logo.png" alt="" class="contain"
-            /></a>
+          <div class="z-30 py-12 px-8 h-full text-sm">
+            <div class="flex flex-col h-96">
+              <div class="h-72 w-72"><img src="img/services_people.png" alt="" class="h-full w-full"></div>
+              <p class="text-green-600 text-base font-bold">Repaire Services</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit aliquam consequatur veritatis dolorum
+                temporibus ab, natus officia quibusdam, nihil error iure velit et facere. Repellendus architecto neque
+                nam sequi consectetur!</p>
+            </div>
           </div>
-          <div class="border border-green-600 w-1/2 h-12 rounded-lg flex">
-            <div
-              class="
+        </div>
+      </div>
+      <!-- end side menu -->
+      <!-- top header -->
+
+      <div class="h-24 flex justify-around items-center px-4   ">
+
+        <!-- select -->
+        <div class="bg-gray-200 rounded items-center text-sm p-1">
+          <select name="language" id="" class="bg-gray-200 w-full font-light text-gray-500">
+            <option value="en">ENG</option>
+            <option value="fr">FRN</option>
+            <option value="es">ESP</option>
+            <option value="ch">CHI</option>
+          </select>
+        </div>
+        <!-- end select  -->
+        <div class="flex items-center w-28">
+          <a href="index.html"><img src="/img/logo.png" alt="" class="contain" /></a>
+        </div>
+        <div class="border border-green-600 w-1/2 h-12 rounded-lg flex">
+          <div class="
                 flex-1
                 border-r border-green-600
                 p-2
                 flex
                 justify-end
                 text-gray-500
-              "
-            >
-              <select name="" id="" class="">
-                <option value="">Products</option>
-                <option value="">Services</option>
-              </select>
-            </div>
-            <div class="w-4/5 p-2 w-full flex items-center">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="w-full"
-                placeholder="Search for industrial products or search by part number"
-              />
-              <span class="flex-1 text-green-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </span>
-            </div>
+              ">
+            <select name="" id="" class="">
+              <option value="">Products</option>
+              <option value="">Services</option>
+            </select>
           </div>
-          <button
-            class="
+          <div class="w-4/5 p-2 w-full flex items-center">
+            <input type="text" name="" id="" class="w-full"
+              placeholder="Search for industrial products or search by part number" />
+            <span class="flex-1 text-green-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <button class="
               text-white
               bg-green-600
               green-btn-rounded
               p-2
               text-sm
               shadow-lg
-            "
-          >
-            Become a partner
-          </button>
-          <!-- cart icon -->
-          <div class="w-8 h-8 flex items-center justify-center relative">
-            <div
-              class="
+            ">
+          Become a partner
+        </button>
+        <!-- cart icon -->
+        <div class="w-8 h-8 flex items-center justify-center relative">
+          <div class="
                 absolute
                 -top-2
                 -right-2
@@ -102,67 +123,47 @@
                 flex
                 items-center
                 justify-center
-              "
-            >
-              1
-            </div>
-            <span class="text-green-600">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
-                />
-              </svg>
-            </span>
+              ">
+            1
           </div>
-          <!-- end  -->
-          <span class="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-green-600 bg-white"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
+          <span class="text-green-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
               <path
-                fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-                clip-rule="evenodd"
-              />
+                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
             </svg>
           </span>
-          <!-- select -->
-          <div class="bg-gray-200 rounded items-center text-sm p-1">
-            <select
-              name="currency"
-              id=""
-              class="bg-gray-200 w-full font-light text-gray-500"
-            >
-              <option value="en">USD$</option>
-              <option value="fr">EUR</option>
-              <option value="es">GBP</option>
-            </select>
-          </div>
-          <!-- end select -->
         </div>
-        <!-- end top header -->
-        <!-- bottom header -->
-        <div
-          class="
+        <!-- end  -->
+        <span class="">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600 bg-white" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+        <!-- select -->
+        <div class="bg-gray-200 rounded items-center text-sm p-1">
+          <select name="currency" id="" class="bg-gray-200 w-full font-light text-gray-500">
+            <option value="en">USD$</option>
+            <option value="fr">EUR</option>
+            <option value="es">GBP</option>
+          </select>
+        </div>
+        <!-- end select -->
+      </div>
+      <!-- end top header -->
+      <!-- bottom header -->
+      <div class="
             bg-green-600
             h-16
             flex
             justify-around
             items-center
             border border-gray-500
-          "
-        >
-          <div class="w-4/5 h-full flex justify-around items-center">
-            <div
-              class="
+          ">
+        <div class="w-4/5 h-full flex justify-around items-center">
+          <div class="
                 flex
                 justify-center
                 flex-auto
@@ -171,112 +172,84 @@
                 border-r
                 h-full
                 border-gray-500
-              "
-            >
-              <span class="mr-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </span>
-              <div class="text-sm text-white"><a href="">Categories</a></div>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">Mechanical</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">System & Solutions</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">Electrical</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">Electronics</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="">Power Supply</a>
-            </div>
-            <div
-              class="
-                text-sm text-white
-                flex-auto
-                items-center
-                justify-center
-                flex
-              "
-            >
-              <a href="brands.html">Shop by brands</a>
-            </div>
+              ">
+            <span class="mr-3" id="menu-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </span>
+            <div class="text-sm text-white"><a href="">Categories</a></div>
           </div>
-          <div class="flex-auto flex items-center justify-center h-full">
-            <button class="border-2 py-1 px-8 rounded text-white text-sm">
-              Whitelist
-            </button>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">Mechanical</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">System & Solutions</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">Electrical</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">Electronics</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="">Power Supply</a>
+          </div>
+          <div class="
+                text-sm text-white
+                flex-auto
+                items-center
+                justify-center
+                flex
+              ">
+            <a href="brands.html">Shop by brands</a>
           </div>
         </div>
-        <!-- end bottom header -->
+        <div class="flex-auto flex items-center justify-center h-full">
+          <button class="border-2 py-1 px-8 rounded text-white text-sm">
+            Whitelist
+          </button>
+        </div>
       </div>
-    </header>
-    <main>
-      <!-- slider -->
-      <div class="h-96 bg-pink-500 w-full relative">
-        <img
-          src="/img/warehouse.jpg"
-          alt=""
-          class="h-full w-full object-cover"
-        />
-        <div
-          class="
+      <!-- end bottom header -->
+    </div>
+  </header>
+  <main>
+    <!-- slider -->
+    <div class="h-96 bg-pink-500 w-full relative">
+      <img src="/img/warehouse.jpg" alt="" class="h-full w-full object-cover" />
+      <div class="
             absolute
             top-28
             px-16
@@ -285,23 +258,21 @@
             flex flex-col
             space-y-3
             items-start
-          "
-        >
-          <h1 class="text-4xl uppercase">Electronic Components</h1>
-          <div>
-            <p>
-              Your number one source for electronic components all over the
-              world
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit,
-              vero, molestiae quibusdam maiores deserunt temporibus minima
-              consequuntur soluta error itaque optio animi possimus dicta iusto?
-              Quia rerum voluptatem voluptates assumenda!
-            </p>
-          </div>
-          <button
-            class="
+          ">
+        <h1 class="text-4xl uppercase">Electronic Components</h1>
+        <div>
+          <p>
+            Your number one source for electronic components all over the
+            world
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit,
+            vero, molestiae quibusdam maiores deserunt temporibus minima
+            consequuntur soluta error itaque optio animi possimus dicta iusto?
+            Quia rerum voluptatem voluptates assumenda!
+          </p>
+        </div>
+        <button class="
               text-sm
               uppercase
               text-green-600
@@ -310,17 +281,15 @@
               rounded
               border-green-600
               py-2
-            "
-          >
-            shop now
-          </button>
-        </div>
+            ">
+          shop now
+        </button>
       </div>
-      <!-- end slider -->
-      <!-- banner -->
-      <div class="p-20">
-        <div
-          class="
+    </div>
+    <!-- end slider -->
+    <!-- banner -->
+    <div class="p-20">
+      <div class="
             bg-gray-200
             h-64
             rounded-3xl
@@ -328,53 +297,35 @@
             justify-center
             items-center
             text-center text-sm
-          "
-        >
-          <div class="w-44 flex flex-col items-center justify-between">
-            <object
-              data="img/quality_product.svg"
-              type=""
-              class="h-36 w-36"
-            ></object>
-            <p>Quality Products</p>
-          </div>
-          <div class="w-44 flex flex-col items-center justify-around">
-            <object
-              data="img/swift_delivery.svg"
-              type=""
-              class="h-36 w-36"
-            ></object>
-            <p>Swift Delivery</p>
-          </div>
-          <div class="w-44 flex flex-col items-center justify-around">
-            <object
-              data="img/easy_return.svg"
-              type=""
-              class="h-36 w-36"
-            ></object>
-            <p>Easy return and refund policy</p>
-          </div>
-          <div class="w-44 flex flex-col items-center justify-around">
-            <object
-              data="img/secure_payment.svg"
-              type=""
-              class="h-36 w-36"
-            ></object>
-            <p>Secure Payment</p>
-          </div>
+          ">
+        <div class="w-44 flex flex-col items-center justify-between">
+          <object data="img/quality_product.svg" type="" class="h-36 w-36"></object>
+          <p>Quality Products</p>
+        </div>
+        <div class="w-44 flex flex-col items-center justify-around">
+          <object data="img/swift_delivery.svg" type="" class="h-36 w-36"></object>
+          <p>Swift Delivery</p>
+        </div>
+        <div class="w-44 flex flex-col items-center justify-around">
+          <object data="img/easy_return.svg" type="" class="h-36 w-36"></object>
+          <p>Easy return and refund policy</p>
+        </div>
+        <div class="w-44 flex flex-col items-center justify-around">
+          <object data="img/secure_payment.svg" type="" class="h-36 w-36"></object>
+          <p>Secure Payment</p>
         </div>
       </div>
-      <!-- end banner -->
-      <!-- explore our category -->
-      <div class="flex flex-col px-20 px-6 space-y-12">
-        <div class="flex justify-center">
-          <h1 class="text-3xl font-light">Explore our categories</h1>
-        </div>
-        <!-- tab view -->
-        <div class="py-8 space-y-10">
-          <!-- tabs -->
-          <div
-            class="
+    </div>
+    <!-- end banner -->
+    <!-- explore our category -->
+    <div class="flex flex-col px-20 px-6 space-y-12">
+      <div class="flex justify-center">
+        <h1 class="text-3xl font-light">Explore our categories</h1>
+      </div>
+      <!-- tab view -->
+      <div class="py-8 space-y-10">
+        <!-- tabs -->
+        <div class="
               text-md
               font-semibold
               text-gray-500
@@ -383,629 +334,489 @@
               border-b
               items-center
               p-2
-            "
-          >
-            <div class="flex-auto flex justify-between">
-              <div class="relative flex justify-center">
-                <a
-                  href="#mechanical_parts"
-                  data-tab="mechanical_parts"
-                  class="active-tab"
-                  >Mechanical Parts</a
-                >
-                <div
-                  class="active-indicator"
-                  indicator="mechanical_parts"
-                  id="mechanical_parts_indicator"
-                ></div>
-              </div>
-              <div class="relative flex justify-center">
-                <a href="#electrical_parts" data-tab="electrical_parts"
-                  >Electrical Parts</a
-                >
-                <div
-                  class=""
-                  indicator="electrical_parts"
-                  id="electrical_parts_indicator"
-                ></div>
-              </div>
-              <div class="relative flex justify-center">
-                <a href="#electronics" data-tab="electronics">Electronics</a>
-                <div
-                  class=""
-                  indicator="electronics"
-                  id="electronics_indicator"
-                ></div>
-              </div>
-              <div class="relative flex justify-center">
-                <a href="#power_supplies" data-tab="power_supplies"
-                  >Power Supplies</a
-                >
-                <div
-                  class=""
-                  indicator="power_suppliess"
-                  id="power_supplies_indicator"
-                ></div>
-              </div>
-              <div class="relative flex justify-center">
-                <a
-                  href="#systems_and_solutions"
-                  data-tab="systems_and_solutions"
-                  >Systems & Solutions</a
-                >
-                <div
-                  class=""
-                  indicator="systems_and_solutions"
-                  id="systems_and_solutions_indicator"
-                ></div>
-              </div>
+            ">
+          <div class="flex-auto flex justify-between">
+            <div class="relative flex justify-center">
+              <a href="#mechanical_parts" data-tab="mechanical_parts" class="active-tab">Mechanical Parts</a>
+              <div class="active-indicator" indicator="mechanical_parts" id="mechanical_parts_indicator"></div>
             </div>
-            <!-- search cat -->
-            <div class="flex flex-none">
-              <input type="text" name="search_categories" id="" class="w-56" />
-              <span class="bg-green-600 text-white p-1 rounded shadow-sm">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
+            <div class="relative flex justify-center">
+              <a href="#electrical_parts" data-tab="electrical_parts">Electrical Parts</a>
+              <div class="" indicator="electrical_parts" id="electrical_parts_indicator"></div>
             </div>
-            <!-- end search cat -->
+            <div class="relative flex justify-center">
+              <a href="#electronics" data-tab="electronics">Electronics</a>
+              <div class="" indicator="electronics" id="electronics_indicator"></div>
+            </div>
+            <div class="relative flex justify-center">
+              <a href="#power_supplies" data-tab="power_supplies">Power Supplies</a>
+              <div class="" indicator="power_suppliess" id="power_supplies_indicator"></div>
+            </div>
+            <div class="relative flex justify-center">
+              <a href="#systems_and_solutions" data-tab="systems_and_solutions">Systems & Solutions</a>
+              <div class="" indicator="systems_and_solutions" id="systems_and_solutions_indicator"></div>
+            </div>
           </div>
-          <!-- end tabs -->
-          <!-- tab Items -->
-          <section>
-            <div
-              id="mechanical_parts"
-              class="grid grid-cols-4 gap-x-4 gap-y-16"
-            >
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-            </div>
-            <div id="electrical_parts" class="hidden">Electrical Parts</div>
-            <div id="electronics" class="hidden">Electronics</div>
-            <div id="power_supplies" class="hidden">Power Supplies</div>
-            <div id="systems_and_solutions" class="hidden">
-              Systems & Solutions
-            </div>
-          </section>
-          <!-- end tab Items -->
+          <!-- search cat -->
+          <div class="flex flex-none">
+            <input type="text" name="search_categories" id="" class="w-56" />
+            <span class="bg-green-600 text-white p-1 rounded shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+          </div>
+          <!-- end search cat -->
         </div>
-        <!-- end tab view -->
+        <!-- end tabs -->
+        <!-- tab Items -->
+        <section>
+          <div id="mechanical_parts" class="grid grid-cols-4 gap-x-4 gap-y-16">
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+          </div>
+          <div id="electrical_parts" class="hidden">Electrical Parts</div>
+          <div id="electronics" class="hidden">Electronics</div>
+          <div id="power_supplies" class="hidden">Power Supplies</div>
+          <div id="systems_and_solutions" class="hidden">
+            Systems & Solutions
+          </div>
+        </section>
+        <!-- end tab Items -->
       </div>
-      <!-- end explore our category -->
+      <!-- end tab view -->
+    </div>
+    <!-- end explore our category -->
 
-      <!-- Best Deals -->
+    <!-- Best Deals -->
 
-      <div class="flex flex-col px-20 py-12 bg-gray-100 space-y-12">
-        <div class="flex justify-center">
-          <h1 class="text-3xl font-light">Best Deals</h1>
-        </div>
-        <!-- tab view -->
-        <div class="py-8 space-y-10">
-          <!-- tabs -->
-          <div
-            class="
+    <div class="flex flex-col px-20 py-12 bg-gray-100 space-y-12">
+      <div class="flex justify-center">
+        <h1 class="text-3xl font-light">Best Deals</h1>
+      </div>
+      <!-- tab view -->
+      <div class="py-8 space-y-10">
+        <!-- tabs -->
+        <div class="
               text-md
               font-semibold
               text-gray-500
@@ -1014,710 +825,553 @@
               border-b
               items-center
               p-2
-            "
-          >
-            <div class="flex-auto flex justify-between">
-              <div class="relative flex justify-center">
-                <a
-                  href="#mechanical_parts"
-                  data-tab="mechanical_parts"
-                  class="active-tab"
-                  >Mechanical Parts</a
-                >
-                <div
-                  class="active-indicator"
-                  indicator="mechanical_parts"
-                  id="mechanical_parts_indicator"
-                ></div>
-              </div>
-              <div class="relative flex justify-center">
-                <a href="#electrical_parts" data-tab="electrical_parts"
-                  >Electrical Parts</a
-                >
-                <div
-                  class=""
-                  indicator="electrical_parts"
-                  id="electrical_parts_indicator"
-                ></div>
-              </div>
-              <div class="relative flex justify-center">
-                <a href="#electronics" data-tab="electronics">Electronics</a>
-                <div
-                  class=""
-                  indicator="electronics"
-                  id="electronics_indicator"
-                ></div>
-              </div>
-              <div class="relative flex justify-center">
-                <a href="#power_supplies" data-tab="power_supplies"
-                  >Power Supplies</a
-                >
-                <div
-                  class=""
-                  indicator="power_suppliess"
-                  id="power_supplies_indicator"
-                ></div>
-              </div>
-              <div class="relative flex justify-center">
-                <a
-                  href="#systems_and_solutions"
-                  data-tab="systems_and_solutions"
-                  >Systems & Solutions</a
-                >
-                <div
-                  class=""
-                  indicator="systems_and_solutions"
-                  id="systems_and_solutions_indicator"
-                ></div>
-              </div>
+            ">
+          <div class="flex-auto flex justify-between">
+            <div class="relative flex justify-center">
+              <a href="#mechanical_parts" data-tab="mechanical_parts" class="active-tab">Mechanical Parts</a>
+              <div class="active-indicator" indicator="mechanical_parts" id="mechanical_parts_indicator"></div>
             </div>
-            <!-- search cat -->
-            <div class="flex flex-none">
-              <input
-                type="text"
-                name="search_categories"
-                id=""
-                class="w-56 bg-gray-100"
-              />
-              <span class="bg-green-600 text-white p-1 rounded shadow-sm">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
+            <div class="relative flex justify-center">
+              <a href="#electrical_parts" data-tab="electrical_parts">Electrical Parts</a>
+              <div class="" indicator="electrical_parts" id="electrical_parts_indicator"></div>
             </div>
-            <!-- end search cat -->
+            <div class="relative flex justify-center">
+              <a href="#electronics" data-tab="electronics">Electronics</a>
+              <div class="" indicator="electronics" id="electronics_indicator"></div>
+            </div>
+            <div class="relative flex justify-center">
+              <a href="#power_supplies" data-tab="power_supplies">Power Supplies</a>
+              <div class="" indicator="power_suppliess" id="power_supplies_indicator"></div>
+            </div>
+            <div class="relative flex justify-center">
+              <a href="#systems_and_solutions" data-tab="systems_and_solutions">Systems & Solutions</a>
+              <div class="" indicator="systems_and_solutions" id="systems_and_solutions_indicator"></div>
+            </div>
           </div>
-          <!-- end tabs -->
-          <!-- tab Items -->
-          <section>
-            <div
-              id="mechanical_parts"
-              class="grid grid-cols-4 gap-x-4 gap-y-16"
-            >
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-
-              <!-- product card -->
-              <div class="flex flex-col font-thin w-64 h-auto">
-                <div class="text-sm space-y-3 group flex flex-col">
-                  <div class="relative group">
-                    <div
-                      class="
-                        absolute
-                        w-16
-                        h-16
-                        bg-green-600
-                        top-4
-                        right-4
-                        rounded-full
-                        text-white
-                        uppercase
-                        flex
-                        justify-center
-                        items-center
-                        font-bold
-                      "
-                    >
-                      New
-                    </div>
-                    <img src="img/allen_product.png" alt="" class="contain" />
-                    <div
-                      class="
-                        w-full
-                        h-full
-                        absolute
-                        top-0
-                        group-hover:bg-gray-900
-                        opacity-30
-                      "
-                    ></div>
-                    <div
-                      class="
-                        bottom-0
-                        bg-gray-800
-                        w-full
-                        text-white
-                        h-12
-                        flex
-                        items-center
-                        justify-between
-                      "
-                    >
-                      <div
-                        class="
-                          bg-black
-                          h-full
-                          w-12
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="text-center flex-1">+ Add to wishlist</p>
-                    </div>
-                  </div>
-
-                  <p class="text-gray-500">176-1A45</p>
-                  <p>
-                    Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
-                    4 I/O…
-                  </p>
-                  <p>
-                    <span class="text-green-600 font-bold">$ 285.00</span> /
-                    <span class="line-through text-gray-700">$330.00</span>
-                  </p>
-                  <div
-                    class="
-                      bg-gray-900
-                      w-32
-                      p-3
-                      text-white text-center
-                      font-medium
-                      rounded
-                      uppercase
-                      hover:bg-green-600
-                    "
-                  >
-                    Add to Cart
-                  </div>
-                </div>
-              </div>
-              <!-- end product card  -->
-            </div>
-            <div id="electrical_parts" class="hidden">Electrical Parts</div>
-            <div id="electronics" class="hidden">Electronics</div>
-            <div id="power_supplies" class="hidden">Power Supplies</div>
-            <div id="systems_and_solutions" class="hidden">
-              Systems & Solutions
-            </div>
-          </section>
-          <!-- end tab Items -->
+          <!-- search cat -->
+          <div class="flex flex-none">
+            <input type="text" name="search_categories" id="" class="w-56 bg-gray-100" />
+            <span class="bg-green-600 text-white p-1 rounded shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+          </div>
+          <!-- end search cat -->
         </div>
-        <!-- end tab view -->
+        <!-- end tabs -->
+        <!-- tab Items -->
+        <section>
+          <div id="mechanical_parts" class="grid grid-cols-4 gap-x-4 gap-y-16">
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+
+            <!-- product card -->
+            <div class="flex flex-col font-thin w-64 h-auto">
+              <div class="text-sm space-y-3 group flex flex-col">
+                <div class="relative group">
+                  <div class="
+                        absolute
+                        w-16
+                        h-16
+                        bg-green-600
+                        top-4
+                        right-4
+                        rounded-full
+                        text-white
+                        uppercase
+                        flex
+                        justify-center
+                        items-center
+                        font-bold
+                      ">
+                    New
+                  </div>
+                  <img src="img/allen_product.png" alt="" class="contain" />
+                  <div class="
+                        w-full
+                        h-full
+                        absolute
+                        top-0
+                        group-hover:bg-gray-900
+                        opacity-30
+                      "></div>
+                  <div class="
+                        bottom-0
+                        bg-gray-800
+                        w-full
+                        text-white
+                        h-12
+                        flex
+                        items-center
+                        justify-between
+                      ">
+                    <div class="
+                          bg-black
+                          h-full
+                          w-12
+                          flex
+                          items-center
+                          justify-center
+                        ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+
+                    <p class="text-center flex-1">+ Add to wishlist</p>
+                  </div>
+                </div>
+
+                <p class="text-gray-500">176-1A45</p>
+                <p>
+                  Allen Bradley 1746-IA4 I/O Module - Digital I/O, 100/120V AC
+                  4 I/O…
+                </p>
+                <p>
+                  <span class="text-green-600 font-bold">$ 285.00</span> /
+                  <span class="line-through text-gray-700">$330.00</span>
+                </p>
+                <div class="
+                      bg-gray-900
+                      w-32
+                      p-3
+                      text-white text-center
+                      font-medium
+                      rounded
+                      uppercase
+                      hover:bg-green-600
+                    ">
+                  Add to Cart
+                </div>
+              </div>
+            </div>
+            <!-- end product card  -->
+          </div>
+          <div id="electrical_parts" class="hidden">Electrical Parts</div>
+          <div id="electronics" class="hidden">Electronics</div>
+          <div id="power_supplies" class="hidden">Power Supplies</div>
+          <div id="systems_and_solutions" class="hidden">
+            Systems & Solutions
+          </div>
+        </section>
+        <!-- end tab Items -->
       </div>
-      <!-- end Best Deals -->
-    </main>
-    <footer>
-      <div
-        class="bg-gradient-to-r from-white to-green-200 p-12 grid grid-cols-4"
-      >
-        <div
-          class="col-span-4 flex justify-between border-b border-gray-400 mb-20"
-        >
-          <div class="">
-            <img src="/img/logo.png" alt="" />
-          </div>
-          <div class="py-16 text-sm">
-            <div class="text-right space-y-3">
-              <p>Do you have questions or concerns about our services</p>
-              <p>Send us a mail on support@stockcheck.com</p>
-              <p>+1 972-234-4343</p>
-            </div>
+      <!-- end tab view -->
+    </div>
+    <!-- end Best Deals -->
+  </main>
+  <footer>
+    <div class="bg-gradient-to-r from-white to-green-200 p-12 grid grid-cols-4">
+      <div class="col-span-4 flex justify-between border-b border-gray-400 mb-20">
+        <div class="">
+          <img src="/img/logo.png" alt="" />
+        </div>
+        <div class="py-16 text-sm">
+          <div class="text-right space-y-3">
+            <p>Do you have questions or concerns about our services</p>
+            <p>Send us a mail on support@stockcheck.com</p>
+            <p>+1 972-234-4343</p>
           </div>
         </div>
-        <!-- about -->
-        <div class="text-sm">
-          <h3 class="text-lg font-normal mb-4">About Us</h3>
-          <div class="space-y-2">
-            <p>Green Eagle Logistics</p>
-            <p>Customer Service</p>
-            <p>Feedback</p>
-            <div class="flex space-x-4">
-              <span>
-                <object
-                  data="img/instagram.svg"
-                  type=""
-                  class="w-6 h-6"
-                ></object>
-              </span>
-              <span>
-                <object data="img/twitter.svg" type="" class="w-6 h-6"></object>
-              </span>
-            </div>
-          </div>
-        </div>
-        <!-- end about  -->
-        <!-- Our policies -->
-        <div class="text-sm">
-          <h3 class="text-lg font-normal mb-4">Our Policies</h3>
-          <div class="space-y-2">
-            <p>Privacy policy</p>
-            <p>Terms And conditions</p>
-            <p>Refund and Returns</p>
-          </div>
-        </div>
-        <!-- end our policies -->
-        <!-- Our services  -->
-        <div class="text-sm">
-          <h3 class="text-lg font-normal mb-4">Our Services</h3>
-          <div class="space-y-2">
-            <p>Top Deals</p>
-            <p>Top Brands</p>
-            <p>Best Sellers</p>
-          </div>
-        </div>
-        <!-- end our services -->
-        <!-- payment -->
-        <div class="text-sm">
-          <h3 class="text-lg font-normal mb-4">Payment</h3>
-          <div class="space-y-2">
-            <p>We accept</p>
-            <div class="grid grid-cols-5 gap-1">
-              <object data="img/paypal@2x.png" type="" class="w-14"></object>
-              <object data="img/visa-2@2x.png" type="" class="w-14"></object>
-              <object data="img/amazon@2x.png" type="" class="w-14"></object>
-              <object
-                data="img/american-express@2x.png"
-                type=""
-                class="w-14"
-              ></object>
-              <object data="img/ebay@2x.png" type="" class="w-14"></object>
-              <object data="img/cirrus@2x.png" type="" class="w-14"></object>
-              <object
-                data="img/mastercard@2x.png"
-                type=""
-                class="w-14"
-              ></object>
-            </div>
-          </div>
-        </div>
-        <!-- end payment  -->
       </div>
-    </footer>
-  </body>
-  <script src="js/tabs.js"></script>
+      <!-- about -->
+      <div class="text-sm">
+        <h3 class="text-lg font-normal mb-4">About Us</h3>
+        <div class="space-y-2">
+          <p>Green Eagle Logistics</p>
+          <p>Customer Service</p>
+          <p>Feedback</p>
+          <div class="flex space-x-4">
+            <span>
+              <object data="img/instagram.svg" type="" class="w-6 h-6"></object>
+            </span>
+            <span>
+              <object data="img/twitter.svg" type="" class="w-6 h-6"></object>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end about  -->
+      <!-- Our policies -->
+      <div class="text-sm">
+        <h3 class="text-lg font-normal mb-4">Our Policies</h3>
+        <div class="space-y-2">
+          <p>Privacy policy</p>
+          <p>Terms And conditions</p>
+          <p>Refund and Returns</p>
+        </div>
+      </div>
+      <!-- end our policies -->
+      <!-- Our services  -->
+      <div class="text-sm">
+        <h3 class="text-lg font-normal mb-4">Our Services</h3>
+        <div class="space-y-2">
+          <p>Top Deals</p>
+          <p>Top Brands</p>
+          <p>Best Sellers</p>
+        </div>
+      </div>
+      <!-- end our services -->
+      <!-- payment -->
+      <div class="text-sm">
+        <h3 class="text-lg font-normal mb-4">Payment</h3>
+        <div class="space-y-2">
+          <p>We accept</p>
+          <div class="grid grid-cols-5 gap-1">
+            <object data="img/paypal@2x.png" type="" class="w-14"></object>
+            <object data="img/visa-2@2x.png" type="" class="w-14"></object>
+            <object data="img/amazon@2x.png" type="" class="w-14"></object>
+            <object data="img/american-express@2x.png" type="" class="w-14"></object>
+            <object data="img/ebay@2x.png" type="" class="w-14"></object>
+            <object data="img/cirrus@2x.png" type="" class="w-14"></object>
+            <object data="img/mastercard@2x.png" type="" class="w-14"></object>
+          </div>
+        </div>
+      </div>
+      <!-- end payment  -->
+    </div>
+  </footer>
+</body>
+<script src="js/tabs.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/show_side_nav.js"></script>
+
 </html>
