@@ -19,7 +19,7 @@ function Tabs() {
         }
     }
 
-    var change = function (e) {
+    let change = function (e) {
         clear();
         e.target.classList.add('active-tab');
 
